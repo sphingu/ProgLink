@@ -10,7 +10,7 @@ $sansserif: 'Signika', Arial, sans-serif;
 
 body {
 	background: $color_secondary;
-	color: #ECF0F1;
+	color: $font-color;
 	font-size: 16px;
 	font-family: $sansserif;
 	-webkit-font-smoothing: antialiased;
