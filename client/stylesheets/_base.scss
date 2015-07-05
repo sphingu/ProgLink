@@ -1,7 +1,20 @@
 $serif: 'Signika', serif;
 $sansserif: 'Signika', Arial, sans-serif;
 
-@import url(http://fonts.googleapis.com/css?family=Signika:300,700,900|Raleway:500|Martel+Sans:400,700);
+// @import url(http://fonts.googleapis.com/css?family=Signika:300,700,900|Raleway:500|Martel+Sans:400,700);
+
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Signika-Light'), url(../font/Signika/Signika-Light.ttf) format('woff');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Signika-Bold'), url(../font/Signika/Signika-Bold.ttf) format('woff');
+}
 
 
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -30,7 +43,7 @@ a {
 	text-decoration: none;
 }
 
-a:hover, 
+a:hover,
 a:focus {
 	color: $color_link;
 	outline: none;
@@ -190,7 +203,8 @@ button:focus {
 
 /* Grid item */
 .grid__item {
-	padding: 45px 55px 30px;
+	border: 1px solid rgba(0, 0, 0, 0.05) !important;
+	padding: 5px 20px 20px;
 	position: relative;
 	color: inherit;
 	background: $color_secondary;
